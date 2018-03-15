@@ -1,0 +1,26 @@
+@charset "utf-8";
+body{
+    margin:0;
+}
+.container{
+    border: 1px solid black;
+    display:grid;
+    grid-template-areas:"box box box box";
+    grid-auto-columns: 20%;
+    grid-auto-rows:100px;
+    justify-content:space-between;
+    grid-gap: 30px;
+}
+.box:nth-child(odd){
+    background-color: olive;
+}
+.box:nth-child(even){
+    background-color: #c28513;
+}
+.box2{
+    grid-row-start: 2;
+    grid-column-start: 2;
+}
+.box8{
+    order: -1;
+}
